@@ -1,16 +1,11 @@
 
 <h2>New Product</h2>
-<%= form_for @product do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
-  <br>
-  <%= f.label :price %>
-  <%= f.text_field :price %>
-  <br>
-  <%= f.label :description %>
-  <%= f.text_area :description %>
-  <br>
-  <%= f.label :inventory %>
-  <%= f.text_field :inventory %>
-  <%= f.submit "submit" %>
+<%= form_for :product do |f| %>
+  Name: <%= f.text_field :name %>
+  <br />
+  Description: <%= f.text_area :description %>
+  <br />
+  Inventory: <%= f.text_field :inventory %>
+  <br />
+  <%= f.submit %>
 <% end %>
